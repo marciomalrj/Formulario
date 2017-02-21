@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Formulario.master.cs" Inherits="Web.Shared.Formulario" %>
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title>Formulário de Perguntas</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="../Content/style.css" rel="stylesheet" />
+    <link href="../Content/Site.css" rel="stylesheet" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+</head>
+
+<body>
+    <div id="main">
+        <div class="form_settings">
+            <form id="form1" runat="server">
+                <div id="header">
+                    <div id="logo">
+                        <div id="logo_text">
+                            <!-- class="logo_colour", allows you to change the colour of the text -->
+                            <h1>Formulário Tanis Informática</h1>
+                            <!--<span class="logo_colour">blue</span></a></h1> -->
+                            <!-- <h2>Simple. Contemporary. Website Template.</h2> -->
+                        </div>
+                    </div>
+                    <div id="menubar">
+                        <ul id="menu">
+                        </ul>
+                    </div>
+                </div>
+                <div id="site_content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        Copyright &copy; <a href="http://tanis.com.br" target="_blank">Tanis Informática</a>
+    </div>
+
+</body>
+</html>
